@@ -1,0 +1,95 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.button-three-wrapper{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #dddddd;
+}
+.button-three{
+    padding: 100px 0px;
+    position: relative;
+}
+
+.button-three ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex;
+}
+.button-three ul li{
+    list-style: none;
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform: rotate(-30deg) skew(25deg);
+}
+.button-three ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    transition: .5s;
+    display: -webkit-box;  
+    display: -ms-flexbox;  
+    display: -webkit-flex; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+.button-three ul li:hover span{
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .1);
+}
+.button-three ul li:hover span:nth-child(5){
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+.button-three ul li:hover span:nth-child(4){
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+.button-three ul li:hover span:nth-child(3){
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+.button-three ul li:hover span:nth-child(2){
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+.button-three ul li:hover span:nth-child(1){
+    transform: translate(0, 0);
+    opacity: .2;
+}
+.button-three ul li:nth-child(1) span{
+    background-color: #3b5999;
+}
+.button-three ul li:nth-child(2) span{
+    background-color: #55acee;
+}
+.button-three ul li:nth-child(3) span{
+    background-color: #0077B5;
+}
+.button-three ul li:nth-child(4) span{
+    background-color: #cd201f;
+}
+.button-three ul li:nth-child(5) span{
+    background-color: #dd4b39;
+}
