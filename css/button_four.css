@@ -9,33 +9,41 @@ body{
     background-color: #ab47bc;
     height: 250px;
     position: relative;
-    padding: 50px 0px;
+    padding: 50px 50px;
+    display: flex;
 }
-.button-four{
+/* .button-hover-one
+-----------------------------------------
+*/
+.button-hover-one{
+    width: 300px;
+    float: left;
     text-align: center;
+    position: relative;
+    border: 2px solid #790e8b;
 }
-.button-four a{
+.button-hover-one a{
     text-transform: uppercase;
     font-size: 24px;
     font-weight: normal;
     color: #790e8b;
     text-decoration: none;
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: #fff;
     border: 2px solid #9C27B0;
     padding: 20px 30px;
     letter-spacing: 2px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
 }
-.button-four a span{
+.button-hover-one a span{
     position: relative;
     z-index: 2;
     transition: .5s all cubic-bezier(0.4, 0, 1, 1);
 }
-.button-four a::before{
+.button-hover-one a::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -46,9 +54,72 @@ body{
     transition: .5s all cubic-bezier(0.4, 0, 1, 1);
     z-index: 1;
 }
-.button-four a:hover::before{
+.button-hover-one a:hover::before{
     left: 0;
 }
-.button-four a:hover span{
+.button-hover-one a:hover span{
     color: #fff;
 }
+
+/* button-hover-two
+------------------------------
+*/
+
+
+.button-hover-two{
+    width: 300px;
+    float: left;
+    text-align: center;
+    position: relative;
+    border: 2px solid #790e8b;
+}
+.centering{
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+}
+.button-hover-two a{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.button-hover-two a::before{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #9C27B0;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 20px 30px;
+    transition: .5s;
+    transform-origin: right;
+    transform: translateX(-100%) rotateY(90deg);
+}
+.button-hover-two a::after{
+    content: attr(title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #790e8b;
+    border: 2px solid #9C27B0;
+    padding: 20px 30px;
+    transition: .5s;
+    transform-origin: left; 
+    transform: translateX(0) rotateY(0deg);
+}
+.button-hover-two a:hover::before{
+    transform: translateX(0) rotateY(0deg);
+}
+.button-hover-two a:hover::after{
+    transform: translateX(100%) rotateY(90deg);
+}
+.button-hover-two{}
+.button-hover-two{}
