@@ -121,5 +121,3 @@ body{
 .button-hover-two a:hover::after{
     transform: translateX(100%) rotateY(90deg);
 }
-.button-hover-two{}
-.button-hover-two{}
