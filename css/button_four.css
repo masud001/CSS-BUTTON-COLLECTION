@@ -1,0 +1,54 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.button-Hover-Effect{
+    position: relative;
+}
+.hover-effect-button{
+    background-color: #ab47bc;
+    height: 250px;
+    position: relative;
+    padding: 50px 0px;
+}
+.button-four{
+    text-align: center;
+}
+.button-four a{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    color: #790e8b;
+    text-decoration: none;
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #9C27B0;
+    padding: 20px 30px;
+    letter-spacing: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.button-four a span{
+    position: relative;
+    z-index: 2;
+    transition: .5s all cubic-bezier(0.4, 0, 1, 1);
+}
+.button-four a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #BA68C8;
+    left: -100%;
+    top: 0;
+    transition: .5s all cubic-bezier(0.4, 0, 1, 1);
+    z-index: 1;
+}
+.button-four a:hover::before{
+    left: 0;
+}
+.button-four a:hover span{
+    color: #fff;
+}
